@@ -26,7 +26,7 @@ docker compose up
 
 ### Start the application
 
-You can start the Express application in development mode by setting the required PostgreSQL environment variables and by running `yarn dev`:
+You can start the Express application in development mode by setting the required PostgreSQL environment variables and by running `yarn dev` in the `sprockets-service` directory:
 
 ```bash
 PGUSER=sprockets \
