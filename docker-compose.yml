@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: sprockets
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./seed-data/01-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./seed-data/02-seed.sql:/docker-entrypoint-initdb.d/02-seed.sql
