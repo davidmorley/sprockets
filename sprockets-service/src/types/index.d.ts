@@ -1,7 +1,7 @@
 interface ChartData {
-  sprocket_production_actual: Number[];
-  sprocket_production_goal: Number[];
-  time: Number[];
+  sprocket_production_actual: number[];
+  sprocket_production_goal: number[];
+  time: number[];
 }
 
 interface FactoryData {
